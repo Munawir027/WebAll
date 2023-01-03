@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Coffee</title>
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Default Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+   
+    <div id="header">
+        <div id="toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="logo">
+            <b>KOPI PAS</b>
+        </div>
+        <div class="btn-logout ms-auto">
+            <a href="login.html"><button type="button" class="btn btn-primary m-5">Logout</button></a>
+        </div>
+    </div>
+    
+    <div id="wrapper" class="hide">
+        
+        <div id="sidebar">
+            <img src="assets/img/logo_dasboard.png" id="logoBrand" class="logoSidebar mx-auto d-block" alt="Image Profile">
+
+            <div><img src="logo-kopipas.svg" alt="" srcset=""></div>
+            <a href="index.html" class="sidebar-item active">
+                <div class="icon"><i class="fa fa-tachometer-alt"></i></div>
+                <div class="text">Dashboard</div>
+            </a>
+            <a href="role.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-light fa-user"></i></div>
+                <div class="text">Role</div>
+            </a>
+            <a href="user.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-light fa-users"></i></div>
+                <div class="text">User</div>
+            </a>
+            <a href="tables.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-light fa-chair"></i></div>
+                <div class="text">Tables</div>
+            </a>
+            <a href="menu.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <div class="text">Menu</div>
+            </a>
+            <a href="outlet.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-light fa-store"></i></div>
+                <div class="text">Outlet</div>
+            </a>
+            <a href="stock.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-light fa-box"></i></div>
+                <div class="text">Stock</div>
+            </a>
+            <a href="wallet.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-wallet"></i></div>
+                <div class="text">Wallet</div>
+            </a>
+            
+            <!-- <div class="devider"></div> -->
+        </div>
+        
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4 pt-5">
+                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row">
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-6 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Earnings (Monthly)</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 40,000</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-6 col-md-6 mb-4">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                            Earnings (Yearly)</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 215,000</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <!--<i class="fas fa-dollar-sign fa-2x text-gray-300"></i>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Row -->
+
+                <div class="row">
+
+                    <!-- Area Chart -->
+                    <div class="col-xl col-lg">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myAreaChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+
+    <script src="assets/js/script.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin.min.js"></script>
+    
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+    
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+
+</body>
+</html>
