@@ -10,22 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(-135deg, #DFC9B4 10%, #ffffff);
+    background-image: url("../img/shape.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     font-family: 'Montserrat', sans-serif;
-}
-
-.background {
-    background-color: #c71616;
-}
-
-.gradasi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    background: linear-gradient(to bottom right, #DFC9B4, #ffffff, #DFC9B4);
 }
 
 .container {
