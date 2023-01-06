@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Coffee</title>
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Default Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+</head>
+<body>
+    <div id="header">
+        <div id="toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="logo-kopi">
+            <b>KOPI</b>
+        </div>
+        <div class="logo-pas">
+            <b>PAS</b>
+        </div>
+
+        <div class="name ms-auto">
+            Admin | Admin
+        </div>
+        <div class="btn-logout ">
+            <a href="login.html"><button type="button" class="btn btn-primary m-5">Logout</button></a>
+        </div>
+    </div>
+    
+    <div id="wrapper" class="hide">
+        
+        <div id="sidebar">
+            <img src="assets/img/logo-brand.svg" id="logoBrand" class="logo-brand ms-3" alt="logo-brand">
+            <!--<div><img src="logo-kopipas.svg" alt="" srcset=""></div>-->
+            <a href="indexAdmin.html" class="sidebar-item">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                    <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+                  </svg>
+                </div>
+                <div class="text">Dashboard</div>
+            </a>
+            <a href="userAdmin.html" class="sidebar-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                    </svg>
+                </div>
+                <div class="text">User</div>
+            </a>
+            <a href="tablesAdmin.html" class="sidebar-item">
+                <div class="icon">
+                    <i class="fa fa-light fa-chair"></i>
+                </div>
+                <div class="text">Tables</div>
+            </a>
+            <a href="outletAdmin.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-light fa-store"></i></div>
+                <div class="text">Outlet</div>
+            </a>
+            <a href="financeAdmin.html" class="sidebar-item active">
+                <div class="icon"><i class="fa fa-wallet"></i></div>
+                <div class="text">Finance</div>
+            </a>
+            
+            <!-- <div class="devider"></div> -->
+        </div>
+        
+        <!-- Main Content -->
+        <div id="content">
+            <!-- <img src="assets/coffee_content.svg" alt=""> -->
+            <div class="container py-3">
+                <h1>Finance Balance</h1>
+                                    
+                <div class="rounded shadow-sm p-3 bg-white">
+
+                    <div class="container mb-5">
+                        <div class="row row-cols-2">
+                            <div class="col-sm-7"><!-- + Add Button -->
+                                <div class="text-xs text-success"><h3>Rp 160.000</h3></div>
+                                    
+                            </div>
+                            <div class="col-sm-3 ms-auto">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Table content-->
+                    <table class="table table-bordered text-center">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-1">Code table</th>
+                            <th class="col-sm-2">Amount</th>
+                            <th class="col-sm-1">Items</th>
+                            <th class="col-sm-1">Type</th>
+                            <th class="col-sm-3">Update on</th>
+                            <th class="col-sm-1">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">1</td>
+                                <td>Rp 20.000</td>
+                                <td>2</td>
+                                <td>Dane in</td>
+                                <td>12 Descember 2022 12:30 pm</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success m-1"><i class="fa-regular fa-eye"></i></button>
+                                        <button type="button" class="btn btn-danger m-1"><i class="fa fa-solid fa-trash-can"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
